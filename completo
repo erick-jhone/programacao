@@ -1,0 +1,72 @@
+import java.util.*;
+
+public class Avaliacao {
+
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in); // Cria instância de Scanner para realizar a leitura futura dos dados
+
+        char v[]; // Criação do vetor v de char
+
+        System.out.println("Digite 3 letras diferentes: "); // Imprime na tela solicitação de dados
+        v = ler.next().toLowerCase().toCharArray(); // Preenche as posicoes de v
+
+
+        if (v.length != 3) { // Verifica se as letras foram 3, se diferente disso encerra programa
+            System.out.println("Os caracteres informados sao diferentes de 3, programa sera fechado, tente novamente");
+            System.exit(0);
+        } // End if
+
+
+        //Sessão de if's a seguir, compara todas as probabilidades envolvendo a ordenação alfabética dos itens:
+
+        if (v[0] < v[1] && v[1] < v[2] ) {
+
+            System.out.print(v[0]);
+            System.out.print(v[1]);
+            System.out.println(v[2]);
+        }
+
+        if (v[0] < v[2] && v[2] < v[1]) {
+
+            System.out.print(v[0]);
+            System.out.print(v[2]);
+            System.out.println(v[1]);
+
+        }
+
+        if (v[1] < v[2] && v[2] < v[0]) {
+
+            System.out.print(v[1]);
+            System.out.print(v[2]);
+            System.out.println(v[0]);
+        }
+
+        if (v[1] < v[0] && v[0] < v[2]) {
+
+            System.out.print(v[1]);
+            System.out.print(v[0]);
+            System.out.println(v[2]);
+        }
+
+        if (v[2] < v[0] && v[0] < v[1]) {
+
+            System.out.print(v[2]);
+            System.out.print(v[0]);
+            System.out.println(v[1]);
+        }
+        if (v[2] < v[1] && v[1] < v[0]) {
+
+            System.out.print(v[2]);
+            System.out.print(v[1]);
+            System.out.println(v[0]);
+        }
+
+        
+
+    } // End Class
+
+} // End Class Avaliacao
+
+
+
