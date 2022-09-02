@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Avaliacao {
+
+    public static void main(String[] args) {
+
+        Scanner ler = new Scanner(System.in);
+        SortedSet<String> ss =  new TreeSet<String>();
+
+        char v[];
+        char a,b,c;
+        System.out.println("Digite 3 letras diferentes: ");
+        v = ler.next().toLowerCase().toCharArray();
+
+
+        if (v.length != 3) {
+            System.out.println("Os caracteres informados sao diferentes de 3, programa sera fechado, tente novamente");
+            System.exit(0);
+        } // End if
+
+        if (v[0] < v[1] && v[1] < v[2] ) {
+
+            System.out.print(v[0]);
+            System.out.print(v[1]);
+            System.out.println(v[2]);
+        }
+
+
+
+    } // End Class
+
+
+} // End Class Avaliacao
